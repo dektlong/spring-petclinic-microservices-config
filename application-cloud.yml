@@ -1,7 +1,0 @@
-spring:
-  datasource:
-    url: ${vcap.services.mysql.credentials.jdbcUrl}
-    username: ${vcap.services.mysql.credentials.username}
-    password: ${vcap.services.mysql.credentials.password}
-    testOnBorrow: true
-    initialization-mode: ALWAYS
