@@ -11,9 +11,6 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-  cloud:
-    discovery:
-      enabled: false
     config:
       # Allow the microservices to override the remote properties with their own System properties or config file
       allow-override: true
@@ -21,12 +18,10 @@ spring:
       override-none: true
 
 # JPA
-spring.jpa.hibernate.ddl-auto: none
+spring.jpa.hibernate.ddl-auto: update
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
-# Enable all Actuators and not only the two available by default /health and /info starting Spring Boot 2.0
-management.endpoints.web.exposure.include: "*"
 # Temporary hack required by the Spring Boot 2 / Spring Cloud Finchley branch
 # Waiting issue https://github.com/spring-projects/spring-boot/issues/13042
 spring.cloud.refresh.refreshable: false
