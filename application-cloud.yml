@@ -4,8 +4,8 @@ spring:
     username: ${vcap.services.mysql.credentials.username}
     password: ${vcap.services.mysql.credentials.password}
     testOnBorrow: true
-    schema: classpath*:db/mysql/schema.sql
-    data: classpath*:db/mysql/data.sql
+#     schema: classpath*:db/mysql/schema.sql
+#     data: classpath*:db/mysql/data.sql
     initialization-mode: ALWAYS
   cloud:
     discovery:
