@@ -67,3 +67,6 @@ spring:
   datasource:
     platform: mysql
     initialization-mode: ALWAYS
+    url: ${vcap.services.mysql.credentials.jdbcUrl}
+    username: ${vcap.services.mysql.credentials.username}
+    password: ${vcap.services.mysql.credentials.password}
