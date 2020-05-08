@@ -29,8 +29,9 @@ management.endpoints.web.exposure.include: "*"
 # Waiting issue https://github.com/spring-projects/spring-boot/issues/13042
 spring.cloud.refresh.refreshable: false
 # Wavefront integration:
-management.metrics.export.wavefront.uri: https://wavefront.surf
+management.metrics.export.wavefront.uri: ${VCAP_SERVICES_WAVEFRONT_PROXY_CREDENTIALS_HOSTNAME}:2878
 wavefront.application.name: pet-clinic
+
 
 
 # Logging
