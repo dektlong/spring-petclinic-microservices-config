@@ -3,3 +3,7 @@ spring:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
     initialization-mode: ALWAYS
+  cloud:
+    discovery:
+      enabled: false
+
