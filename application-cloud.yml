@@ -9,10 +9,9 @@ spring:
     password: ${vcap.services.mysql.credentials.password:petclinic}
 
 #Wavefront
-management:
-  metrics:
-    export:
-      wavefront:
-        uri: http://192.168.8.20
-        api-token: 9d735838-6a18-408f-94e1-c33208a1601e
-        #${VCAP_SERVICES_WAVEFRONT_TOKEN_CREDENTIALS_TOKEN}
+# management:
+#   metrics:
+#     export:
+#       wavefront:
+#         uri: http://192.168.8.20
+#         api-token: 9d735838
