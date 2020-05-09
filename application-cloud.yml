@@ -7,5 +7,5 @@ spring:
     password: ${vcap.services.mysql.credentials.password:petclinic}
 
 #Wavefront
-management.metrics.export.wavefront.api-token=${vcap.services.wavefront-token.credentials.token}
-management.metrics.export.wavefront.uri=http://${vcap.services.wavefront-proxy.credentials.hostname}:${vcap.services.wavefront-proxy.credentials.port}
+management.metrics.export.wavefront.uri: http://${VCAP_SERVICES_WAVEFRONT_PROXY_CREDENTIALS_HOSTNAME}:${VCAP_SERVICES_WAVEFRONT_PROXY_CREDENTIALS_PORT}
+management.metrics.export.wavefront.api-token: ${VCAP_SERVICES_WAVEFRONT_TOKEN_CREDENTIALS_TOKEN}
