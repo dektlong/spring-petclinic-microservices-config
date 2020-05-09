@@ -72,5 +72,7 @@ spring:
     password: ${vcap.services.mysql.credentials.password}
     type: com.mysql.cj.jdbc.Driver
   jpa:
+    show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
+      generate-ddl: true
