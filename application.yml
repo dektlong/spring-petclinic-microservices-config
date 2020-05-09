@@ -70,7 +70,7 @@ spring:
     url: ${vcap.services.mysql.credentials.jdbcUrl}
     username: ${vcap.services.mysql.credentials.username}
     password: ${vcap.services.mysql.credentials.password}
-    type: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    type: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: none
