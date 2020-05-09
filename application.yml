@@ -8,7 +8,7 @@ spring:
   datasource:
     platform: mysql
     initialization-mode: always
-    url: ${vcap.services.mysql.credentials.jdbcUrl:'jdbc:mysql://localhost:3306/petclinic?useSSL=false'}
+    url: ${vcap.services.mysql.credentials.jdbcUrl:jdbc:mysql://localhost:3306/petclinic?useSSL=false}
     username: ${vcap.services.mysql.credentials.username:root}
     password: ${vcap.services.mysql.credentials.password:petclinic}
     driver-class-name: com.mysql.cj.jdbc.Driver
