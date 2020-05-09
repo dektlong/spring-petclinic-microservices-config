@@ -10,4 +10,4 @@ management:
     export:
       wavefront:
         api-token: ${vcap.services.wavefront-token.credentials.token}
-        uri: ${vcap.services.wavefront-proxy.credentials.hostname}:${vcap.services.wavefront-proxy.credentials.port}
+        uri: http://${vcap.services.wavefront-proxy.credentials.hostname}:${vcap.services.wavefront-proxy.credentials.port}
