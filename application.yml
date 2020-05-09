@@ -1,6 +1,6 @@
 # COMMON APPLICATION PROPERTIES
 
-# start services on random port by default
+# start services on random port by default  
 server.port: 0
 
 # embedded database init, supports mysql too trough the 'mysql' spring profile
