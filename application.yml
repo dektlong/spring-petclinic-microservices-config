@@ -4,12 +4,12 @@
 server.port: 0
 
 # embedded database init, supports mysql too trough the 'mysql' spring profile
-spring:
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create-drop
-      generate-ddl: true
+#spring:
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: create-drop
+#      generate-ddl: true
   sleuth:
     sampler:
       probability: 1.0
