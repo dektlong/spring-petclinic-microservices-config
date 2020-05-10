@@ -12,7 +12,7 @@ spring:
   cloud:
    services:
      registrationMethod: direct
-Wavefront
+wavefront:
   management:
     metrics:
       export:
