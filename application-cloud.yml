@@ -10,8 +10,8 @@ spring:
     username: ${vcap.services.mysql.credentials.username:root}
     password: ${vcap.services.mysql.credentials.password:petclinic}
   cloud:
-   services:
-     registrationMethod: direct
+    services:
+      registrationMethod: direct
 
 management:
   metrics:
