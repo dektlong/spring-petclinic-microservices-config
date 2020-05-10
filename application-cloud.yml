@@ -9,7 +9,9 @@ spring:
     url: ${vcap.services.mysql.credentials.jdbcUrl:jdbc:mysql://localhost:3306/petclinic?useSSL=false}
     username: ${vcap.services.mysql.credentials.username:root}
     password: ${vcap.services.mysql.credentials.password:petclinic}
-
+  cloud:
+   services:
+     registrationMethod: direct
 #Wavefront
 # management:
 #   metrics:
