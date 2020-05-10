@@ -13,9 +13,9 @@ spring:
    services:
      registrationMethod: direct
 
-# management:
-#   metrics:
-#     export:
-#       wavefront:
-#         uri: http://192.168.8.20
-#         api-token: 9d735838
+management:
+  metrics:
+    export:
+      wavefront:
+        uri: http://192.168.8.20
+        api-token: 9d735838
