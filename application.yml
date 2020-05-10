@@ -23,7 +23,7 @@ spring:
       override-none: true
   cloud:
     services:
-     registrationMethod: direct
+      registrationMethod: direct
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
