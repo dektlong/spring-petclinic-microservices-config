@@ -58,6 +58,9 @@ management:
       prometheus:
         enabled: true
 
+eureka.client.fetchRegistry: true
+
+
 ---
 spring:
   profiles: mysql
