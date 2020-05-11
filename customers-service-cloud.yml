@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: ${vcap.services.customers-db.credentials.jdbcUrl}&statementInterceptors=brave.mysql.TracingStatementInterceptor&zipkinServiceName=customers-db
+    url: ${vcap.services.customers-db.credentials.jdbcUrl}&queryInterceptors=brave.mysql8.TracingQueryInterceptor&exceptionInterceptors=brave.mysql8.TracingExceptionInterceptor&zipkinServiceName=customers-db
     username: ${vcap.services.customers-db.credentials.username:root}
     password: ${vcap.services.customers-db.credentials.password:petclinic}
