@@ -62,7 +62,7 @@ eureka.client.fetchRegistry: true
 spring:
   profiles: mysql
   datasource:
-    url: jdbc:mysql://localhost:3306/petclinic?useSSL=false&statementInterceptors=brave.mysql.TracingStatementInterceptor&zipkinServiceName=localDockerDb
+    url: jdbc:mysql://localhost:3306/service_instance_db?useSSL=false&statementInterceptors=brave.mysql.TracingStatementInterceptor&zipkinServiceName=localDockerDb
     platform: mysql
     username: root
     password: petclinic
