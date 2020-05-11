@@ -3,3 +3,7 @@ spring:
     url: ${vcap.services.visits-db.credentials.jdbcUrl}&statementInterceptors=brave.mysql.TracingStatementInterceptor&zipkinServiceName=visits-db
     username: ${vcap.services.visits-db.credentials.username}
     password: ${vcap.services.visits-db.credentials.password}
+wavefront:
+  application:
+    name: pet-clinic-local
+  freemium-account: false
