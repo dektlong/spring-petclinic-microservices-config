@@ -20,5 +20,5 @@ management:
 
 wavefront:
   application:
-    name: ${vcap.services.wavefront.credentials.application-name}
+    name: ${vcap.services.TO-proxy.credentials.application-name}
   freemium-account: false
